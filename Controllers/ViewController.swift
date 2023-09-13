@@ -8,7 +8,7 @@
 import SwiftUI
 class ViewController: ObservableObject {
   @Published var tempConverter = TempConverter()
-  @Published var inputTempString: String = "0.0"
+  @Published var inputTempString: String = ""
   @Published var convertedTempString: String = "0.0"
   @Published var isConvertingCtoF: Bool = true
   

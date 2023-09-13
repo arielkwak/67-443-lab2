@@ -30,9 +30,9 @@ class TempConverter {
   func setInputUnit(_ tempUnit: TempUnit) {
     switch tempUnit {
         case .fahrenheit:
-            isConvertingCtoF = true
-        case .celsius:
             isConvertingCtoF = false
+        case .celsius:
+            isConvertingCtoF = true
     }
   }
     
@@ -46,23 +46,11 @@ class TempConverter {
   }
     
   func convertCtoF() {
-    if let temp = convertedTemp {
-      if isConvertingCtoF {
-        convertedTemp = Int(Double(temp - 32) * 5/9)
-      } else {
-        return
-      }
-    }
+    convertedTemp = Int(Double(inputTemp) * 9/5 + 32)
   }
   
   func convertFtoC() {
-    if let temp = convertedTemp {
-      if isConvertingCtoF {
-        return
-      } else {
-        convertedTemp = Int(Double(temp) * 9/5 + 32)
-      }
-    }
+    convertedTemp = Int(Double(inputTemp - 32) * 5/9)
   }
     
   func convert() {
