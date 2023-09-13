@@ -11,6 +11,9 @@
 		F0C2BEFE2AB0CF5500AAF560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2BEFD2AB0CF5500AAF560 /* ContentView.swift */; };
 		F0C2BF002AB0CF5900AAF560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C2BEFF2AB0CF5900AAF560 /* Assets.xcassets */; };
 		F0C2BF032AB0CF5900AAF560 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C2BF022AB0CF5900AAF560 /* Preview Assets.xcassets */; };
+		F0C2BF2B2AB0D12900AAF560 /* TempConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2BF2A2AB0D12900AAF560 /* TempConverter.swift */; };
+		F0C2BF2D2AB14D0600AAF560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2BF2C2AB14D0600AAF560 /* ViewController.swift */; };
+		F0C2BF2F2AB15D5300AAF560 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2BF2E2AB15D5300AAF560 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		F0C2BF022AB0CF5900AAF560 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0C2BF082AB0CF5A00AAF560 /* TempConverterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C2BF122AB0CF5A00AAF560 /* TempConverterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C2BF2A2AB0D12900AAF560 /* TempConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverter.swift; sourceTree = "<group>"; };
+		F0C2BF2C2AB14D0600AAF560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0C2BF2E2AB15D5300AAF560 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 		F0C2BEEF2AB0CF5400AAF560 = {
 			isa = PBXGroup;
 			children = (
+				F0C2BF292AB0D0E200AAF560 /* Views */,
+				F0C2BF282AB0D0D700AAF560 /* Controllers */,
+				F0C2BF272AB0D0CC00AAF560 /* Models */,
 				F0C2BEFA2AB0CF5500AAF560 /* TempConverterApp */,
 				F0C2BEF92AB0CF5500AAF560 /* Products */,
 			);
@@ -86,8 +95,6 @@
 		F0C2BEFA2AB0CF5500AAF560 /* TempConverterApp */ = {
 			isa = PBXGroup;
 			children = (
-				F0C2BEFB2AB0CF5500AAF560 /* TempConverterAppApp.swift */,
-				F0C2BEFD2AB0CF5500AAF560 /* ContentView.swift */,
 				F0C2BEFF2AB0CF5900AAF560 /* Assets.xcassets */,
 				F0C2BF012AB0CF5900AAF560 /* Preview Content */,
 			);
@@ -100,6 +107,32 @@
 				F0C2BF022AB0CF5900AAF560 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0C2BF272AB0D0CC00AAF560 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0C2BF2A2AB0D12900AAF560 /* TempConverter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0C2BF282AB0D0D700AAF560 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0C2BF2C2AB14D0600AAF560 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0C2BF292AB0D0E200AAF560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0C2BEFB2AB0CF5500AAF560 /* TempConverterAppApp.swift */,
+				F0C2BEFD2AB0CF5500AAF560 /* ContentView.swift */,
+				F0C2BF2E2AB15D5300AAF560 /* InfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C2BF2B2AB0D12900AAF560 /* TempConverter.swift in Sources */,
 				F0C2BEFE2AB0CF5500AAF560 /* ContentView.swift in Sources */,
+				F0C2BF2D2AB14D0600AAF560 /* ViewController.swift in Sources */,
+				F0C2BF2F2AB15D5300AAF560 /* InfoView.swift in Sources */,
 				F0C2BEFC2AB0CF5500AAF560 /* TempConverterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
